@@ -1,0 +1,14 @@
+{
+  "name": "uss-be",
+  "version": "1.0.0",
+  "description": "backend for url shortening service",
+  "main": "index.js",
+  "repository": "https://github.com/lalalawson/url-shorten-be.git",
+  "author": "lawson",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.6.0"
+  }
+}
