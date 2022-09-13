@@ -16,6 +16,7 @@ app.get("/", function (req, res) {
 // parse request in JSON format
 app.use(express.json());
 app.use("/shorten", require("./routes/shorten"));
+app.use("/redirect", require("./routes/redirect"));
 
 httpServer.listen(port, () => {
   console.log(`USS backend is running on port ${port}...`);
