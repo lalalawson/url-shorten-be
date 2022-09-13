@@ -13,8 +13,9 @@ app.get("/", function (req, res) {
   res.send("Welcome to USS!");
 });
 
-// Model for the url object
-const Url = require("./models/urlModel");
+// parse request in JSON format
+app.use(express.json());
+app.use("/shorten", require("./routes/shorten"));
 
 httpServer.listen(port, () => {
   console.log(`USS backend is running on port ${port}...`);
