@@ -18,7 +18,7 @@ app.use(express.json());
 app.use("/shorten", require("./routes/shorten"));
 app.use("/redirect", require("./routes/redirect"));
 
-httpServer.listen(port, () => {
-  console.log(`USS backend is running on port ${port}...`);
+httpServer.listen(process.env.PORT || port, () => {
+  console.log(`USS backend is running on port ${process.env.PORT || port}...`);
   console.log("Attemping to connect to MongoDB cluster..");
 });
