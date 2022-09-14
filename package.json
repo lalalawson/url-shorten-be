@@ -2,14 +2,14 @@
   "name": "uss-be",
   "version": "1.0.0",
   "description": "backend for url shortening service",
-  "main": "app.js",
+  "main": "server.js",
   "repository": "https://github.com/lalalawson/url-shorten-be.git",
   "author": "lawson",
   "license": "",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx nodemon app.js"
+    "start": "npx nodemon server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
