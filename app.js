@@ -15,4 +15,4 @@ app.use(express.json());
 app.use("/shorten", require("./routes/shorten"));
 app.use("/redirect", require("./routes/redirect"));
 
-module.exports = app.js;
+module.exports = app;
